@@ -20,15 +20,9 @@ public class CSVGenerator implements DocumentGenerator {
 
     @Override
     public void generateDocument(String path, Collection<Field> fields, long nbRows) throws IOException {
-        long lastMonitoringPercentage = 1;
         try (FileWriter fw = new FileWriter(path)) {
             fw.write(buildHeader(fields) + "\r\n");
             for (int i = 0; i < nbRows; i++) {
-                if ((100 *i / nbRows) > lastMonitoringPercentage){
-                    lastMonitoringPercentage++;
-                    System.out.println((100 *i / nbRows) + "%");
-                }
-
                 fw.write(buildRow(fields) + "\r\n");
             }
         }
