@@ -3,7 +3,6 @@ package com.cca.data.generator;
 import com.cca.data.field.Field;
 
 import java.io.IOException;
-import java.nio.file.Path;
 import java.util.Collection;
 
 public interface DocumentGenerator {

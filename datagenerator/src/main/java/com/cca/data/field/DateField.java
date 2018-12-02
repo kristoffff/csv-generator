@@ -4,8 +4,6 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
-import static java.time.temporal.ChronoUnit.DAYS;
-
 public class DateField implements Field<LocalDate>{
 
     public final static DateTimeFormatter DEFAULT_FORMAT = DateTimeFormatter.ofPattern("YYYYMMdd");

@@ -1,14 +1,9 @@
 package com.cca.data.generator;
 
 import com.cca.data.field.Field;
-import com.cca.data.generator.DocumentGenerator;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.OpenOption;
-import java.nio.file.Path;
-import java.nio.file.StandardOpenOption;
 import java.util.Collection;
 import java.util.stream.Collectors;
 
